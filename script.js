@@ -8,7 +8,7 @@ window.onload = function() {
 
   const audio = document.getElementById('testAudio')
 
-  audio.volume = 0.005;
+  audio.volume = 0.001;
 
   const headerText = document.getElementsByClassName('headerText')[0];
   
