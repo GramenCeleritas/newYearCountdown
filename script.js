@@ -1,6 +1,6 @@
 window.onload = function() { 
   const newYears = "1 January 2024"
-
+  const body = document.querySelector('body')
   const daysElement = document.getElementsByClassName('days')[0];
   const hoursElement = document.getElementsByClassName('hours')[0];
   const minsElement = document.getElementsByClassName('mins')[0];
@@ -8,6 +8,7 @@ window.onload = function() {
 
   const audio = document.getElementById('testAudio')
 
+ 
   audio.volume = 0.01;
 
   const headerText = document.getElementsByClassName('headerText')[0];
@@ -24,24 +25,18 @@ window.onload = function() {
     const secs = Math.floor(totalSec)%60;
   
   
-    console.log('new Year date ' + newYearDate, 'curent date ' + currentDate)
-    console.log('total seconds ' + totalSec)
-    console.log(days,hours,mins,secs)
-  
     daysElement.textContent = days.toString(10);
     hoursElement.textContent = hours.toString();
     minsElement.textContent = mins.toString();
     secsElement.textContent = secs.toString();
+
+    body.classList.add('visible')
   }
   
-  
-  let number = 1233333;
-  console.log(number.toString())
   
   
   /// intialize the countdown
   setInterval(countdown, 1000)
 
-
+  
 }  
-
