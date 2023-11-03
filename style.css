@@ -230,3 +230,38 @@ body {
         transition: gap 1s ease-in;
     }
 }
+
+@media screen and (max-width: 350px) {
+    body {
+
+        
+        background-size: 400%;
+        transition: background-size 1s ease-in;
+        background-position: 25% 2%;
+    }
+    
+    .headerText {
+        font-size: 2rem;
+        text-align: center;
+        transition: font-size 1s ease-in;
+        margin-top: 1rem;
+    }
+
+    .bigText {
+        font-size: 2.5rem;
+        transition: font-size 1s ease-in;
+        margin: 1rem;
+    }
+
+    .frameForContent {
+        width: 20rem;
+        height: 18rem;
+        border-radius: 3rem;
+        transition: width 1s ease-in, height 1s ease-in;
+    }
+
+    .countdownContainer {
+        gap: 1.5rem;
+        transition: gap 1s ease-in;
+    }
+}
