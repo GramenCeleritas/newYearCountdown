@@ -59,7 +59,7 @@ window.onload = function() {
 
   },5000)
 
-  audio.volume = 0.02;
+  audio.volume = 0.3;
   
   const headerText = document.getElementsByClassName('headerText')[0];
   
