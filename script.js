@@ -64,6 +64,11 @@ window.onload = function() {
 
   },5000)
 
+  setTimeout(() => {
+    textForNotif.classList.remove('visibleElement');
+    notification.classList.remove('visibleElementNotification');
+  }, 20000)
+
   audio.volume = 0.3;
   
   const headerText = document.getElementsByClassName('headerText')[0];
