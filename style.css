@@ -102,6 +102,8 @@ body {
     transition: font-size 1s ease-in, margin 1s ease-in;
 }
 
+
+
      
 @keyframes textclip {
     to {
@@ -166,6 +168,100 @@ body {
     transform: translateY(70px);
 }
 
+.playerIcon {
+    background-image: url(./assets/playerIcon.png);
+    background-size: 100%;
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    opacity: 0;
+    inset: 5rem 0 0 75rem;
+    z-index: 3;
+}
+
+.appearPlayerIcon {
+    opacity: 0.7;
+}
+
+#testAudio {
+    position: absolute;
+}
+
+.playerIconAnim {
+	animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.playerIconAnimDown {
+    animation: scale-down-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.notificationAudio {
+    background: #ffffff;
+    width: 16rem;
+    height: 6rem;
+    position: fixed;
+    border-radius: 15px;
+    inset: 3.5rem 0 0 78rem;
+    transform: translate(20rem, 0rem);
+    z-index: 1;
+    opacity: 0;
+    border: 1px solid #bfbfbf;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    transition: transform 1s ease-in, opacity 1s ease-in;
+}
+
+.notificationAudioText {
+    text-align: center;
+    z-index: 2;
+    opacity: 0;
+    height: 5rem;
+    width: 15rem;
+    margin: 1.5rem 0 0 0.5rem;
+    color: #000000;
+    position: fixed;
+    inset: 3.5rem 0 0 78rem;
+    transform: translate(20rem, 0rem);
+    transition: transform 1s ease-in, opacity 1s ease-in;
+}
+
+.notificationAudioAppear {
+    opacity: 0.5;
+    transform: translate(-20rem, 0rem);
+}
+
+.notificationAudioTextAppear {
+    opacity: 1;
+    transform: translate(-20rem, 0rem);
+}
+
+@keyframes scale-down-center {
+    0% {
+              transform: scale(1);
+    }
+    100% {
+              transform: scale(0.9);
+    }
+
+    0% {
+            transform: scale(1);
+    }
+  }
+
+/**
+ * ----------------------------------------
+ * animation scale-up-center
+ * ----------------------------------------
+ */
+  @keyframes scale-up-center {
+    0% {
+              transform: scale(0.9);
+    }
+    100% {
+              transform: scale(1.1);
+    }
+  }
+  
+/* ------------ Media start ------------ */
 
 @media screen and (max-width: 1226px) {
     body {

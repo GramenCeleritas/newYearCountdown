@@ -27,6 +27,9 @@ window.onload = function() {
     
   }
   setInterval(countdown, 1000)
+
+//// DOM ELEMENTS
+
   const body = document.querySelector('body')
   const daysElement = document.getElementsByClassName('days')[0];
   const hoursElement = document.getElementsByClassName('hours')[0];
@@ -35,6 +38,49 @@ window.onload = function() {
   const textForNotif = document.getElementsByClassName('notificationText')[0];
   const notification = document.getElementsByClassName('notification')[0];
   const audio = document.getElementById('testAudio')
+  const playerIcon = document.getElementsByClassName('playerIcon')[0]
+  const notificationAudio = document.getElementsByClassName('notificationAudio')[0];
+  const notificationAudioText = document.getElementsByClassName('notificationAudioText')[0];
+
+ 
+
+  playerIcon.addEventListener('click', () => {
+    
+    if (audio.hasAttribute('controls')) {
+      audio.removeAttribute('controls') 
+    } else {
+      audio.setAttribute('controls','')
+    }
+  })
+
+
+
+  playerIcon.addEventListener('mouseover', () => {
+    playerIcon.classList.add('playerIconAnim')
+    
+    if (!notificationAudio.classList.contains('shoved')) {
+      notificationAudio.classList.add('notificationAudioAppear')
+      notificationAudioText.classList.add('notificationAudioTextAppear')
+      notificationAudio.classList.add('shoved')
+    }
+
+  })
+
+  playerIcon.addEventListener('mouseleave', () => {
+    playerIcon.classList.remove('playerIconAnim');
+    
+    playerIcon.classList.add('playerIconAnimDown');
+    setTimeout(()=> {
+      playerIcon.classList.remove('playerIconAnimDown');
+    },500);
+
+    setTimeout(()=> {
+      notificationAudio.classList.remove('notificationAudioAppear')
+      notificationAudioText.classList.remove('notificationAudioTextAppear')
+    }, 4000)
+  })
+
+
 
   setTimeout(() => {
     textForNotif.classList.add('visibleElement');
@@ -58,11 +104,14 @@ window.onload = function() {
     audio.play()
     console.log('you have clicked')
     
+    if (!audio.paused) {
+      playerIcon.classList.add('appearPlayerIcon')
+      console.log('audio is playing now')
+    }
+
   })
 
-  setTimeout(() => {
-
-  },5000)
+  
 
   setTimeout(() => {
     textForNotif.classList.remove('visibleElement');
