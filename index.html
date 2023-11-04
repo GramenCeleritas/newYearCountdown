@@ -7,13 +7,16 @@
     <link rel="stylesheet" type="text/css" href="./style.css">
     <link rel="icon" type="image/x-icon" href="./assets/icons8-clock-64.png">
     <script src="./script.js"></script>
-    <audio id="testAudio" autoplay loop>
-        <source src="./assets/pink-floyd-time.mp3" type="audio/ogg" />
+    
+</head>
+<body>
+    <iframe src="./assets/250-milliseconds-of-silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
+    <audio id="testAudio" autoplay>
+
+        <source src="./assets/pink-floyd-time.mp3" type="audio/mp3" />
         <source src="./assets/monetochka-kazhdyy-raz.mp3" type="audio/mp3" />
         Your browser does not support the audio element.
       </audio>
-</head>
-<body>
     <div class="mainContentContainer">
         <h1 class="headerText">New Year Countdown</h1>
         <div class="countdownContainer">
