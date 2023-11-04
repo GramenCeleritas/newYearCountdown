@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap');
 * {
     box-sizing: border-box;
 }
@@ -57,8 +57,9 @@ body {
 
 .headerText {
     font-weight: normal;
-    font-size: 5rem;
-    margin-top: 3rem ;
+    font-size: 7rem;
+    margin: 2rem 0 2rem 0;
+    font-family: 'Bebas Neue', sans-serif;
     /* anim */
 
 
@@ -92,7 +93,7 @@ body {
 
 .bigText {
     font-size: 6rem;
-    margin: 3rem 0 0 0;
+    margin: 0.5rem 0 0 0;
     transition: font-size 1s ease-in;
 }
 
@@ -135,13 +136,15 @@ body {
     }
 
     .headerText {
-        font-size: 4.5rem;
+        font-size: 6rem;
         transition: font-size 1s ease-in;
+        margin: 3rem 0 2rem 0;
     }
 
     .bigText {
         font-size: 5rem;
         transition: font-size 1s ease-in;
+        margin: 1rem 0 2rem 0;
     }
 }
 
@@ -155,13 +158,14 @@ body {
     }
     
     .headerText {
-        font-size: 3.5rem;
+        font-size: 6rem;
         transition: font-size 1s ease-in;
     }
 
     .bigText {
         font-size: 5rem;
         transition: font-size 1s ease-in;
+        margin: 0rem 0 2rem 0;
     }
 
     .frameForContent {
@@ -180,14 +184,16 @@ body {
     }
     
     .headerText {
-        font-size: 2rem;
+        font-size: 4rem;
 
         transition: font-size 1s ease-in;
+        margin: 3rem 0 0.5rem 0;
     }
 
     .bigText {
-        font-size: 2.5rem;
+        font-size: 3rem;
         transition: font-size 1s ease-in;
+        margin: 1rem 0 2rem 0;
     }
 
     .frameForContent {
@@ -211,14 +217,16 @@ body {
     }
     
     .headerText {
-        font-size: 1.5rem;
+        font-size: 4rem;
 
         transition: font-size 1s ease-in;
+        margin: 2rem 0 0rem 0;
     }
 
     .bigText {
-        font-size: 2rem;
+        font-size: 3rem;
         transition: font-size 1s ease-in;
+        margin: 2rem 0 2rem 0;
     }
 
     .frameForContent {
@@ -243,7 +251,7 @@ body {
     }
     
     .headerText {
-        font-size: 1.5rem;
+        font-size: 4rem;
         text-align: center;
         transition: font-size 1s ease-in;
         margin-top: 2rem;
@@ -257,7 +265,7 @@ body {
 
     .frameForContent {
         width: 20rem;
-        height: 18rem;
+        height: 23rem;
         border-radius: 3rem;
         transition: width 1s ease-in, height 1s ease-in;
     }
@@ -282,10 +290,10 @@ body {
     }
     
     .headerText {
-        font-size: 2rem;
+        font-size: 4rem;
         text-align: center;
         transition: font-size 1s ease-in;
-        margin-top: 1rem;
+        margin-top: 2rem;
     }
 
     .bigText {
@@ -296,7 +304,7 @@ body {
 
     .frameForContent {
         width: 20rem;
-        height: 18rem;
+        height: 23rem;
         border-radius: 3rem;
         transition: width 1s ease-in, height 1s ease-in;
     }
@@ -318,10 +326,10 @@ body {
     }
     
     .headerText {
-        font-size: 2rem;
+        font-size: 4rem;
         text-align: center;
         transition: font-size 1s ease-in;
-        margin-top: 1rem;
+        margin-top: 2rem;
     }
 
     .bigText {
@@ -332,7 +340,7 @@ body {
 
     .frameForContent {
         width: 20rem;
-        height: 18rem;
+        height: 23rem;
         border-radius: 3rem;
         transition: width 1s ease-in, height 1s ease-in;
     }
