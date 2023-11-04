@@ -57,8 +57,8 @@ body {
 
 .headerText {
     font-weight: normal;
-    font-size: 7rem;
-    margin: 2rem 0 2rem 0;
+    font-size: 8rem;
+    margin: 2rem 0 0.5rem 0;
     font-family: 'Bebas Neue', sans-serif;
     /* anim */
 
@@ -93,7 +93,7 @@ body {
 
 .bigText {
     font-size: 6rem;
-    margin: 0.5rem 0 0 0;
+    margin: 1.5rem 0 0 0;
     transition: font-size 1s ease-in;
 }
 
