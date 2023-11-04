@@ -125,11 +125,32 @@ body {
     text-shadow: 0.2rem 0.1rem 0px #50550d;
 }
 
+
+@media screen and (max-width: 1226px) {
+    body {
+
+        
+        background-size: 160%;
+        transition: background-size 1s ease-in;
+    }
+
+    .headerText {
+        font-size: 4.5rem;
+        transition: font-size 1s ease-in;
+    }
+
+    .bigText {
+        font-size: 5rem;
+        transition: font-size 1s ease-in;
+    }
+}
+
+
 @media screen and (max-width: 900px) {
     body {
 
         
-        background-size: 140%;
+        background-size: 150%;
         transition: background-size 1s ease-in;
     }
     
@@ -150,22 +171,34 @@ body {
     }
 }
 
-@media screen and (max-width: 1226px) {
+@media screen and (max-width: 800px) {
     body {
 
         
-        background-size: 160%;
+        background-size: 300%;
         transition: background-size 1s ease-in;
     }
-
+    
     .headerText {
-        font-size: 4.5rem;
+        font-size: 2rem;
+
         transition: font-size 1s ease-in;
     }
 
     .bigText {
-        font-size: 5rem;
+        font-size: 2.5rem;
         transition: font-size 1s ease-in;
+    }
+
+    .frameForContent {
+        width: 30rem;
+        height: 20rem;
+        transition: width 1s ease-in, height 1s ease-in;
+    }
+
+    .countdownContainer {
+        gap: 4rem;
+        transition: gap 1s ease-in;
     }
 }
 
@@ -200,38 +233,7 @@ body {
     }
 }
 
-@media screen and (max-width: 750px) {
-    body {
-
-        
-        background-size: 300%;
-        transition: background-size 1s ease-in;
-    }
-    
-    .headerText {
-        font-size: 2rem;
-
-        transition: font-size 1s ease-in;
-    }
-
-    .bigText {
-        font-size: 2.5rem;
-        transition: font-size 1s ease-in;
-    }
-
-    .frameForContent {
-        width: 30rem;
-        height: 20rem;
-        transition: width 1s ease-in, height 1s ease-in;
-    }
-
-    .countdownContainer {
-        gap: 4rem;
-        transition: gap 1s ease-in;
-    }
-}
-
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 450px) {
     body {
 
         
@@ -241,10 +243,10 @@ body {
     }
     
     .headerText {
-        font-size: 2rem;
+        font-size: 1.5rem;
         text-align: center;
         transition: font-size 1s ease-in;
-        margin-top: 1rem;
+        margin-top: 2rem;
     }
 
     .bigText {
@@ -265,6 +267,10 @@ body {
         transition: gap 1s ease-in;
     }
 }
+
+
+
+
 
 @media screen and (max-width: 350px) {
     body {
@@ -301,7 +307,8 @@ body {
     }
 }
 
-@media screen and (max-width: 450px) {
+
+@media screen and (max-width: 300px) {
     body {
 
         
@@ -311,10 +318,10 @@ body {
     }
     
     .headerText {
-        font-size: 1.5rem;
+        font-size: 2rem;
         text-align: center;
         transition: font-size 1s ease-in;
-        margin-top: 2rem;
+        margin-top: 1rem;
     }
 
     .bigText {
