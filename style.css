@@ -177,6 +177,7 @@ body {
     opacity: 0;
     inset: 5rem 0 0 75rem;
     z-index: 3;
+    transition: inset 1s ease-in;
 }
 
 .appearPlayerIcon {
@@ -285,6 +286,10 @@ body {
         width: 50rem;
         height: 30rem;
         transition: width 1s ease-in, height 1s ease-in;
+    }
+
+    .playerIcon {
+        inset: 5rem 0 0 60rem;
     }
 }
 
