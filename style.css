@@ -84,6 +84,8 @@ body {
        animation: textclip 2s linear infinite;
        display: inline-block;
        transition: font-size 1s ease-in;
+
+       transition: font-size 1s ease-in, margin 1s ease-in;
      
 }
 
@@ -97,7 +99,7 @@ body {
 .bigText {
     font-size: 6rem;
     margin: 1.5rem 0 0 0;
-    transition: font-size 1s ease-in;
+    transition: font-size 1s ease-in, margin 1s ease-in;
 }
 
      
@@ -175,13 +177,11 @@ body {
 
     .headerText {
         font-size: 6rem;
-        transition: font-size 1s ease-in;
-        margin: 7rem 0 2rem 0;
+        margin: 8rem 0 2rem 0;
     }
 
     .bigText {
         font-size: 5rem;
-        transition: font-size 1s ease-in;
         margin: 1rem 0 2rem 0;
     }
 
@@ -203,13 +203,11 @@ body {
     
     .headerText {
         font-size: 6rem;
-        transition: font-size 1s ease-in;
-        margin: 6rem 0 3rem 0;
+        margin: 7rem 0 3rem 0;
     }
 
     .bigText {
         font-size: 5rem;
-        transition: font-size 1s ease-in;
         margin: 0rem 0 2rem 0;
     }
 
@@ -230,14 +228,11 @@ body {
     
     .headerText {
         font-size: 4rem;
-
-        transition: font-size 1s ease-in;
-        margin: 5rem 0 0.5rem 0;
+        margin: 6rem 0 0.5rem 0;
     }
 
     .bigText {
         font-size: 3rem;
-        transition: font-size 1s ease-in;
         margin: 1rem 0 2rem 0;
     }
 
@@ -263,14 +258,11 @@ body {
     
     .headerText {
         font-size: 4rem;
-
-        transition: font-size 1s ease-in;
         margin: 6rem 0 0rem 0;
     }
 
     .bigText {
         font-size: 3rem;
-        transition: font-size 1s ease-in;
         margin: 2rem 0 2rem 0;
     }
 
@@ -298,13 +290,11 @@ body {
     .headerText {
         font-size: 4rem;
         text-align: center;
-        transition: font-size 1s ease-in;
         margin: 5rem 0 2rem 0;
     }
 
     .bigText {
         font-size: 2.5rem;
-        transition: font-size 1s ease-in;
         margin: 0.5rem 0 0 0;
     }
 
@@ -343,7 +333,6 @@ body {
 
     .bigText {
         font-size: 2.5rem;
-        transition: font-size 1s ease-in;
         margin: 1rem;
     }
 
@@ -379,7 +368,6 @@ body {
 
     .bigText {
         font-size: 2.5rem;
-        transition: font-size 1s ease-in;
         margin: 1rem;
     }
 

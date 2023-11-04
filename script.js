@@ -41,15 +41,20 @@ window.onload = function() {
     notification.classList.add('visibleElementNotification');
   }, 1200)
 
-  setTimeout(() => {
-    textForNotif.classList.remove('visibleElement');
-    notification.classList.remove('visibleElementNotification');
-  }, 6000)
+
+
+
+  
   
   
 
   window.addEventListener('click', () => {
-    
+    textForNotif.innerHTML = "audio is anabled, enjoy &#128521;"
+
+    setTimeout(() => {
+      textForNotif.classList.remove('visibleElement');
+      notification.classList.remove('visibleElementNotification');
+    }, 6000)
     audio.play()
     console.log('you have clicked')
     
