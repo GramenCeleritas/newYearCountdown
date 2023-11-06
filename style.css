@@ -497,16 +497,16 @@ body {
         align-items: center;
     }
     .playerIcon {
-        inset: 75% 0 0 45%;
+        inset: 90% 0 0 45%;
     }
 
     .notificationAudioText {
-        inset: 62% 0 0 97%;
+        inset: 75% 0 0 97%;
 
     }
 
     .notificationAudio {
-        inset: 62% 0 0 97%;
+        inset: 75% 0 0 97%;
     }
 }
 
