@@ -637,3 +637,43 @@ body {
         font-size: 2.5rem;
     }
 }
+
+@media screen and (min-width: 2560px) {
+    .playerIcon {
+        inset: 4.5% 0 0 82%;
+    }
+    
+    .notificationAudioText {
+        inset: 2.5% 0 0 83.5%;
+
+    }
+
+    .notificationAudio {
+        inset: 2.5% 0 0 83.5%;
+    }
+
+    .headerText {
+        font-size: 12rem;
+        margin: 8rem 0 2rem 0;
+    }
+
+    .bigText {
+        font-size: 10rem;
+        margin: 1rem 0 2rem 0;
+    }
+
+    .frameForContent {
+        width: 100rem;
+        height: 50rem;
+        transition: width 1s ease-in, height 1s ease-in;
+    }
+
+    .countdownContainer {
+        gap: 13rem;
+        
+    }
+
+    .underText {
+        font-size: 2.5rem;
+    }
+}
