@@ -102,7 +102,7 @@ window.onload = function() {
     setTimeout(() => {
       textForNotif.classList.remove('visibleElement');
       notification.classList.remove('visibleElementNotification');
-    }, 6000)
+    }, 8000)
     audio.play()
     console.log('you have clicked')
     

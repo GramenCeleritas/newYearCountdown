@@ -604,12 +604,12 @@ body {
     }
     
     .notificationAudioText {
-        inset: 2.5% 0 0 72%;
+        inset: 2.5% 0 0 72.5%;
 
     }
 
     .notificationAudio {
-        inset: 2.5% 0 0 72%;
+        inset: 2.5% 0 0 72.5%;
     }
 
     .headerText {
