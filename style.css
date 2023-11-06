@@ -156,6 +156,7 @@ body {
     transition: transform 1s ease-in, opacity 1s ease-in;
     cursor: pointer;
     transform: translateY(-70px);
+    width: 15rem;
 }
 
 .notificationContainer {
@@ -581,7 +582,7 @@ body {
     .headerText {
         font-size: 4rem;
         text-align: center;
-        margin: 4rem 0 2rem 0;
+        margin: 6rem 0 2rem 0;
     }
 
     .bigText {
@@ -593,7 +594,7 @@ body {
         width: 20rem;
         height: 23rem;
         border-radius: 3rem;
-        transition: width 1s ease-in, height 1s ease-in;
+        margin: 6rem 0 0 0;
     }
 
     .countdownContainer {
@@ -616,6 +617,16 @@ body {
     .notificationAudio {
         inset: 75% 0 0 97%;
     }
+
+    .visibleElement {
+        transform: translateY(30px);
+    }
+
+    .visibleElementNotification {
+        transform: translateY(30px);
+    }
+
+
 }
 
 
