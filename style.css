@@ -582,7 +582,7 @@ body {
     .headerText {
         font-size: 4rem;
         text-align: center;
-        margin: 6rem 0 2rem 0;
+        margin: 9rem 0 2rem 0;
     }
 
     .bigText {
@@ -594,7 +594,7 @@ body {
         width: 20rem;
         height: 23rem;
         border-radius: 3rem;
-        margin: 6rem 0 0 0;
+        margin: 9rem 0 0 0;
     }
 
     .countdownContainer {
@@ -619,11 +619,11 @@ body {
     }
 
     .visibleElement {
-        transform: translateY(30px);
+        transform: translateY(60px);
     }
 
     .visibleElementNotification {
-        transform: translateY(30px);
+        transform: translateY(60px);
     }
 
 
@@ -826,6 +826,58 @@ body {
 
     .notificationAudio {
         inset: 4.5% 0 0 80%;
+        width: 13rem;
+        height: 4rem;
+    }
+
+    .mainContentContainer {
+        margin: 8rem 0 0 0;
+    }
+
+    .visibleElement {
+        transform: translateY(63px);
+        opacity: 1;
+    }
+    
+    .visibleElementNotification {
+        opacity: 0.5;
+        transform: translateY(63px);
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    body {
+        transition: background-size 1s ease-in;
+    }
+    
+    .headerText {
+        font-size: 6rem;
+        margin: 5rem 0 3rem 0;
+    }
+
+    .bigText {
+        font-size: 5rem;
+        margin: 0rem 0 2rem 0;
+    }
+
+    .frameForContent {
+        width: 50rem;
+        height: 30rem;
+        margin: 9rem 0 0 0;
+        transition: width 1s ease-in, height 1s ease-in;
+    }
+
+    .playerIcon {
+        inset: 8% 0 0 75%;
+    }
+
+    .notificationAudioText {
+        inset: 6% 0 0 80%;
+        width: 12rem;
+    }
+
+    .notificationAudio {
+        inset: 7% 0 0 80%;
         width: 13rem;
         height: 4rem;
     }
