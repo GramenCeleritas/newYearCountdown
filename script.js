@@ -64,6 +64,11 @@ window.onload = function() {
       notificationAudio.classList.add('shoved')
     }
 
+    setTimeout(()=> {
+      notificationAudio.classList.remove('notificationAudioAppear')
+      notificationAudioText.classList.remove('notificationAudioTextAppear')
+    }, 5500)
+
   })
 
   playerIcon.addEventListener('mouseleave', () => {
@@ -74,10 +79,7 @@ window.onload = function() {
       playerIcon.classList.remove('playerIconAnimDown');
     },500);
 
-    setTimeout(()=> {
-      notificationAudio.classList.remove('notificationAudioAppear')
-      notificationAudioText.classList.remove('notificationAudioTextAppear')
-    }, 4000)
+    
   })
 
 
