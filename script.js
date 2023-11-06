@@ -116,7 +116,7 @@ window.onload = function() {
   setTimeout(() => {
     textForNotif.classList.remove('visibleElement');
     notification.classList.remove('visibleElementNotification');
-  }, 20000)
+  }, 1500000)
 
   audio.volume = 0.3;
   

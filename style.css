@@ -33,14 +33,23 @@ body {
     font-family: 'Kanit', sans-serif;
     background: #27da92;
     background-image: url(./assets/car.jpg);
-    align-items: center;
-    flex-direction: column;
+    
     width: 100%;
     height: 100%;
     background-size: 100%;
     background-repeat: no-repeat;
     transition: background-size 1s ease-in;
     display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainDivForCenterContent {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
 }
 
 .visible {
@@ -55,6 +64,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 8rem;
+    transition: gap 1s ease-in;
     
 }
 
@@ -145,11 +155,17 @@ body {
     transition: transform 1s ease-in, opacity 1s ease-in;
 }
 
+.notificationContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .notification {
     background: #ffffff;
     width: 16rem;
     height: 4rem;
-    position: fixed;
+    position: absolute;
     border-radius: 15px;
     transform: translateY(-200px);
     z-index: 1;
@@ -168,6 +184,15 @@ body {
     transform: translateY(70px);
 }
 
+.containerForRightSideElements {
+    display: flex;
+    flex-direction: column;
+    align-items: end ;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
 .playerIcon {
     background-image: url(./assets/playerIcon.png);
     background-size: 100%;
@@ -175,9 +200,9 @@ body {
     height: 3rem;
     position: absolute;
     opacity: 0;
-    inset: 5rem 0 0 75rem;
     z-index: 3;
-    transition: inset 1s ease-in;
+    transition: inset 1s ease-in, inset 1s ease-in;
+    inset: 10% 0 0 82%;
 }
 
 .appearPlayerIcon {
@@ -186,6 +211,9 @@ body {
 
 #testAudio {
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .playerIconAnim {
@@ -202,13 +230,14 @@ body {
     height: 6rem;
     position: fixed;
     border-radius: 15px;
-    inset: 3.5rem 0 0 78rem;
     transform: translate(20rem, 0rem);
     z-index: 1;
     opacity: 0;
+    inset: 5% 0 0 82%;
     border: 1px solid #bfbfbf;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     transition: transform 1s ease-in, opacity 1s ease-in;
+    position: fixed;
 }
 
 .notificationAudioText {
@@ -220,7 +249,7 @@ body {
     margin: 1.5rem 0 0 0.5rem;
     color: #000000;
     position: fixed;
-    inset: 3.5rem 0 0 78rem;
+    inset: 5% 0 0 82%;
     transform: translate(20rem, 0rem);
     transition: transform 1s ease-in, opacity 1s ease-in;
 }
@@ -233,6 +262,11 @@ body {
 .notificationAudioTextAppear {
     opacity: 1;
     transform: translate(-20rem, 0rem);
+}
+
+.underText {
+    font-size: 1rem;
+    transition: font-size 1s ease-in;
 }
 
 @keyframes scale-down-center {
@@ -264,6 +298,24 @@ body {
   
 /* ------------ Media start ------------ */
 
+
+
+
+@media screen and (min-width: 1920px) {
+    .playerIcon {
+        inset: 7% 0 0 76%;
+    }
+
+    .notificationAudioText {
+        inset: 5% 0 0 78%;
+
+    }
+
+    .notificationAudio {
+        inset: 5% 0 0 78%;
+    }
+}
+
 @media screen and (max-width: 1226px) {
     body {
 
@@ -289,7 +341,7 @@ body {
     }
 
     .playerIcon {
-        inset: 5rem 0 0 60rem;
+        inset: 5rem 0 0 55rem;
     }
 }
 
@@ -317,9 +369,35 @@ body {
         height: 30rem;
         transition: width 1s ease-in, height 1s ease-in;
     }
+
+    .playerIcon {
+        inset: 4% 0 0 88%;
+    }
+
+    .notificationAudioText {
+        inset: 3% 0 0 93%;
+
+    }
+
+    .notificationAudio {
+        inset: 3% 0 0 93%;
+    }
 }
 
 @media screen and (max-width: 800px) {
+
+    .playerIcon {
+        inset: 90% 0 0 45%;
+    }
+
+    .notificationAudioText {
+        inset: 90% 0 0 45%;
+
+    }
+
+    .notificationAudio {
+        inset: 90% 0 0 45%;
+    }
     body {
 
         
@@ -346,6 +424,10 @@ body {
     .countdownContainer {
         gap: 4rem;
         transition: gap 1s ease-in;
+    }
+
+    .containerForRightSideElements {
+        align-items: center;
     }
 }
 
@@ -410,6 +492,22 @@ body {
         gap: 1.5rem;
         transition: gap 1s ease-in;
     }
+
+    .containerForRightSideElements {
+        align-items: center;
+    }
+    .playerIcon {
+        inset: 75% 0 0 45%;
+    }
+
+    .notificationAudioText {
+        inset: 62% 0 0 97%;
+
+    }
+
+    .notificationAudio {
+        inset: 62% 0 0 97%;
+    }
 }
 
 
@@ -448,6 +546,8 @@ body {
         gap: 1.5rem;
         transition: gap 1s ease-in;
     }
+
+
 }
 
 
@@ -482,5 +582,45 @@ body {
     .countdownContainer {
         gap: 1.5rem;
         transition: gap 1s ease-in;
+    }
+}
+
+@media screen and (min-width: 3000px) {
+    .playerIcon {
+        inset: 3.5% 0 0 72%;
+    }
+    
+    .notificationAudioText {
+        inset: 2.5% 0 0 72%;
+
+    }
+
+    .notificationAudio {
+        inset: 2.5% 0 0 72%;
+    }
+
+    .headerText {
+        font-size: 12rem;
+        margin: 8rem 0 2rem 0;
+    }
+
+    .bigText {
+        font-size: 10rem;
+        margin: 1rem 0 2rem 0;
+    }
+
+    .frameForContent {
+        width: 100rem;
+        height: 50rem;
+        transition: width 1s ease-in, height 1s ease-in;
+    }
+
+    .countdownContainer {
+        gap: 13rem;
+        
+    }
+
+    .underText {
+        font-size: 2.5rem;
     }
 }

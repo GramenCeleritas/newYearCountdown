@@ -10,49 +10,60 @@
     
 </head>
 <body>
-    <div class="playerIcon"></div>
-    <div class="notification">
-    </div>
-    <p class="notificationText">click if you want to enable audio </p>
-    <div>
+    
+    
+    
+    <div class="containerForRightSideElements">
+        <div class="playerIcon"></div>
         <div class="notificationAudio"></div>
         <p class="notificationAudioText">You can enable player control by clicking this button</p>
     </div>
-    <iframe src="./assets/250-milliseconds-of-silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
-    <audio id="testAudio" src="./assets/pink-floyd-time.mp3">
-        <source src="./assets/Chris De Burgh - Time In A Bottle.mp3" type="mp3">
+
+    
     </audio>
-    <div class="mainContentContainer">
-        <h1 class="headerText">New Year Countdown </h1>
-        <div class="countdownContainer">
-            <div class="countdownE1 days-c">
-                <p class="bigText days" id="days">0</p>
-                <span class="underText">days</span>
-            </div>
-    
-            <div class="countdownE1 hours-c">
-                <p class="bigText hours" id="hours">0</p>
-                <span class="underText">hours</span>
-            </div>
-    
-            <div class="countdownE1 mins-c">
-                <p class="bigText mins" id="mins">0</p>
-                <span class="underText">mins</span>
-            </div>
-    
-            <div class="countdownE1 seconds-c">
-                <p class="bigText seconds" id="seconds">0</p>
-                <span class="underText">seconds</span>
+    <div class="mainDivForCenterContent">
+        
+        <div class="notificationContainer">
+            <p class="notificationText">click if you want to enable audio </p>
+            <div class="notification"></div>
+        </div>
+        
+        <div class="mainContentContainer">
+            <h1 class="headerText">New Year Countdown </h1>
+            <div class="countdownContainer">
+                <div class="countdownE1 days-c">
+                    <p class="bigText days" id="days">0</p>
+                    <span class="underText">days</span>
+                </div>
+        
+                <div class="countdownE1 hours-c">
+                    <p class="bigText hours" id="hours">0</p>
+                    <span class="underText">hours</span>
+                </div>
+        
+                <div class="countdownE1 mins-c">
+                    <p class="bigText mins" id="mins">0</p>
+                    <span class="underText">mins</span>
+                </div>
+        
+                <div class="countdownE1 seconds-c">
+                    <p class="bigText seconds" id="seconds">0</p>
+                    <span class="underText">seconds</span>
+                </div>
             </div>
         </div>
-    </div>
-
-    
-    
-
-    <div class="frameForContent">
+        <div class="frameForContent">
         
+        </div>
+        <iframe src="./assets/250-milliseconds-of-silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
+        <audio id="testAudio" src="./assets/pink-floyd-time.mp3">
+        <source src="./assets/Chris De Burgh - Time In A Bottle.mp3" type="mp3">
     </div>
+
+    
+    
+
+
     
 </body>
 </html>
