@@ -148,12 +148,13 @@ body {
 .notificationText {
     text-align: center;
     z-index: 2;
-    margin: 1.2rem 0 0 0;
+    margin: 3rem 0 0 0;
+    opacity: 0;
     color: #000000;
     position: absolute;
-    transform: translateY(-200px);
     transition: transform 1s ease-in, opacity 1s ease-in;
     cursor: pointer;
+    transform: translateY(-70px);
 }
 
 .notificationContainer {
@@ -168,12 +169,13 @@ body {
     height: 4rem;
     position: absolute;
     border-radius: 15px;
-    transform: translateY(-200px);
+    opacity: 0;
     z-index: 1;
     border: 1px solid #bfbfbf;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     transition: transform 1s ease-in, opacity 1s ease-in;
     cursor: pointer;
+    transform: translateY(-70px);
 }
 
 .visibleElement {
@@ -520,7 +522,7 @@ body {
 
 
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 360px) {
     body {
 
         
@@ -533,18 +535,19 @@ body {
         font-size: 4rem;
         text-align: center;
         transition: font-size 1s ease-in;
-        margin: 5rem 0 0 0;
+        margin: 2.5rem 0 0 0;
     }
 
     .bigText {
         font-size: 2.5rem;
-        margin: 1rem;
+        margin: 1rem 0 0 0;
     }
 
     .frameForContent {
         width: 20rem;
-        height: 23rem;
+        height: 18rem;
         border-radius: 3rem;
+        margin: 5rem 0 0 0;
         transition: width 1s ease-in, height 1s ease-in;
     }
 
@@ -554,19 +557,39 @@ body {
     }
 
     .playerIcon {
-        inset: 75% 0 0 45%;
+        inset: 89% 0 0 44%;
     }
 
     .notificationAudioText {
-        inset: 62% 0 0 105%;
+        inset: 69% 0 0 105%;
 
     }
 
     .notificationAudio {
-        inset: 62% 0 0 105%;
+        inset: 69% 0 0 105%;
     }
 
+    .mainContentContainer {
+        margin: 3rem 0 0 0;
+    }
 
+    .notificationText {
+        margin: 1.6rem 0 0 0;
+    }
+
+    .notification {
+        margin: 0.5rem 0 0 0;
+    }
+
+    .visibleElement {
+        transform: translateY(00px);
+        opacity: 1;
+    }
+    
+    .visibleElementNotification {
+        opacity: 0.5;
+        transform: translateY(0px);
+    }
 }
 
 
@@ -601,6 +624,19 @@ body {
     .countdownContainer {
         gap: 1.5rem;
         transition: gap 1s ease-in;
+    }
+
+    .playerIcon {
+        inset: 75% 0 0 45%;
+    }
+
+    .notificationAudioText {
+        inset: 62% 0 0 105%;
+
+    }
+
+    .notificationAudio {
+        inset: 62% 0 0 105%;
     }
 }
 
