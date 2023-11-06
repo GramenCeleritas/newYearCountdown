@@ -38,10 +38,11 @@ body {
     height: 100%;
     background-size: 100%;
     background-repeat: no-repeat;
-    transition: background-size 1s ease-in;
+    
     display: none;
     flex-direction: column;
     align-items: center;
+    transition: background-size 1s ease-in;
 }
 
 .mainDivForCenterContent {
@@ -741,9 +742,7 @@ body {
 
 @media screen and (min-width: 1226px) {
     body {
-
-        
-        background-size: 160%;
+        background-size: 100%;
         transition: background-size 1s ease-in;
     }
 
@@ -773,7 +772,6 @@ body {
 
     .notificationAudioText {
         inset: 6.5% 0 0 82%;
-        font-size: 0.8rem;
         width: 12rem;
     }
 
@@ -786,9 +784,6 @@ body {
 
 @media screen and (min-width: 1500px) {
     body {
-
-        
-        background-size: 150%;
         transition: background-size 1s ease-in;
     }
     
@@ -810,16 +805,16 @@ body {
     }
 
     .playerIcon {
-        inset: 8% 0 0 75%;
+        inset: 5% 0 0 75%;
     }
 
     .notificationAudioText {
-        inset: 6% 0 0 80%;
+        inset: 3.8% 0 0 80%;
         width: 12rem;
     }
 
     .notificationAudio {
-        inset: 7% 0 0 80%;
+        inset: 4.5% 0 0 80%;
         width: 13rem;
         height: 4rem;
     }
@@ -857,17 +852,21 @@ body {
 
 
 @media screen and (min-width: 2560px) {
+    body {
+        background-size: 100%;
+    }
+
     .playerIcon {
-        inset: 4.5% 0 0 82%;
+        inset: 5% 0 0 82%;
     }
     
     .notificationAudioText {
-        inset: 2.5% 0 0 83.5%;
+        inset: 3.7% 0 0 83.5%;
 
     }
 
     .notificationAudio {
-        inset: 2.5% 0 0 83.5%;
+        inset: 4.5% 0 0 83.5%;
     }
 
     .headerText {
