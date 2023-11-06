@@ -598,18 +598,20 @@ body {
     }
 }
 
-@media screen and (min-width: 3000px) {
+
+
+@media screen and (min-width: 2560px) {
     .playerIcon {
-        inset: 3.5% 0 0 72%;
+        inset: 4.5% 0 0 82%;
     }
     
     .notificationAudioText {
-        inset: 2.5% 0 0 72.5%;
+        inset: 2.5% 0 0 83.5%;
 
     }
 
     .notificationAudio {
-        inset: 2.5% 0 0 72.5%;
+        inset: 2.5% 0 0 83.5%;
     }
 
     .headerText {
@@ -638,18 +640,18 @@ body {
     }
 }
 
-@media screen and (min-width: 2560px) {
+@media screen and (min-width: 3000px) {
     .playerIcon {
-        inset: 4.5% 0 0 82%;
+        inset: 3.5% 0 0 72%;
     }
     
     .notificationAudioText {
-        inset: 2.5% 0 0 83.5%;
+        inset: 2.5% 0 0 72.5%;
 
     }
 
     .notificationAudio {
-        inset: 2.5% 0 0 83.5%;
+        inset: 2.5% 0 0 72.5%;
     }
 
     .headerText {
