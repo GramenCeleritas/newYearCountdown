@@ -815,7 +815,6 @@ body {
 
     .notificationAudioText {
         inset: 6% 0 0 80%;
-        font-size: 0.8rem;
         width: 12rem;
     }
 
@@ -899,11 +898,11 @@ body {
 
 @media screen and (min-width: 3000px) {
     .playerIcon {
-        inset: 3.5% 0 0 72%;
+        inset: 3% 0 0 72%;
     }
     
     .notificationAudioText {
-        inset: 2.5% 0 0 72.5%;
+        inset: 2% 0 0 72.5%;
 
     }
 
