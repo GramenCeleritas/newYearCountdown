@@ -547,6 +547,19 @@ body {
         transition: gap 1s ease-in;
     }
 
+    .playerIcon {
+        inset: 75% 0 0 45%;
+    }
+
+    .notificationAudioText {
+        inset: 62% 0 0 105%;
+
+    }
+
+    .notificationAudio {
+        inset: 62% 0 0 105%;
+    }
+
 
 }
 
