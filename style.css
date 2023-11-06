@@ -153,6 +153,7 @@ body {
     position: absolute;
     transform: translateY(-200px);
     transition: transform 1s ease-in, opacity 1s ease-in;
+    cursor: pointer;
 }
 
 .notificationContainer {
@@ -172,6 +173,7 @@ body {
     border: 1px solid #bfbfbf;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     transition: transform 1s ease-in, opacity 1s ease-in;
+    cursor: pointer;
 }
 
 .visibleElement {
@@ -203,6 +205,7 @@ body {
     z-index: 3;
     transition: inset 1s ease-in, inset 1s ease-in;
     inset: 10% 0 0 82%;
+    cursor: pointer;
 }
 
 .appearPlayerIcon {
