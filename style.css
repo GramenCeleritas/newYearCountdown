@@ -321,35 +321,8 @@ body {
     }
 }
 
-@media screen and (max-width: 1226px) {
-    body {
 
-        
-        background-size: 160%;
-        transition: background-size 1s ease-in;
-    }
-
-    .headerText {
-        font-size: 6rem;
-        margin: 8rem 0 2rem 0;
-    }
-
-    .bigText {
-        font-size: 5rem;
-        margin: 1rem 0 2rem 0;
-    }
-
-    .frameForContent {
-        width: 50rem;
-        height: 30rem;
-        transition: width 1s ease-in, height 1s ease-in;
-    }
-
-    .playerIcon {
-        inset: 4% 0 0 88%;
-    }
-}
-
+/* for mobile 900px */
 
 @media screen and (min-width: 900px) {
     body {
@@ -392,52 +365,51 @@ body {
     }
 }
 
-@media screen and (max-width: 800px) {
-
-    .playerIcon {
-        inset: 90% 0 0 45%;
-    }
-
-    .notificationAudioText {
-        inset: 90% 0 0 45%;
-
-    }
-
-    .notificationAudio {
-        inset: 90% 0 0 45%;
-    }
+@media screen and (min-width: 1226px) {
     body {
 
         
-        background-size: 300%;
+        background-size: 160%;
         transition: background-size 1s ease-in;
     }
-    
+
     .headerText {
-        font-size: 4rem;
-        margin: 6rem 0 0.5rem 0;
+        font-size: 6rem;
+        margin: 8rem 0 2rem 0;
     }
 
     .bigText {
-        font-size: 3rem;
+        font-size: 5rem;
         margin: 1rem 0 2rem 0;
     }
 
     .frameForContent {
-        width: 30rem;
-        height: 20rem;
+        width: 50rem;
+        height: 30rem;
         transition: width 1s ease-in, height 1s ease-in;
     }
 
-    .countdownContainer {
-        gap: 4rem;
-        transition: gap 1s ease-in;
+    .playerIcon {
+        inset: 4% 0 0 88%;
     }
 
-    .containerForRightSideElements {
-        align-items: center;
+    .playerIcon {
+        inset: 9% 0 0 77%;
+    }
+
+    .notificationAudioText {
+        inset: 6.5% 0 0 82%;
+        font-size: 0.8rem;
+        width: 12rem;
+    }
+
+    .notificationAudio {
+        inset: 8% 0 0 82%;
+        width: 13rem;
+        height: 4rem;
     }
 }
+
 
 @media screen and (max-width: 600px) {
     body {
