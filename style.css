@@ -306,20 +306,7 @@ body {
 
 
 
-@media screen and (min-width: 1920px) {
-    .playerIcon {
-        inset: 7% 0 0 76%;
-    }
 
-    .notificationAudioText {
-        inset: 5% 0 0 78%;
-
-    }
-
-    .notificationAudio {
-        inset: 5% 0 0 78%;
-    }
-}
 
 
 /* for mobile 900px */
@@ -365,50 +352,190 @@ body {
     }
 }
 
-@media screen and (min-width: 1226px) {
+@media screen and (min-width: 800px) {
     body {
 
         
-        background-size: 160%;
+        background-size: 150%;
         transition: background-size 1s ease-in;
     }
-
+    
     .headerText {
         font-size: 6rem;
-        margin: 8rem 0 2rem 0;
+        margin: 5rem 0 0 0;
     }
 
     .bigText {
         font-size: 5rem;
-        margin: 1rem 0 2rem 0;
+        margin: 0rem 0 2rem 0;
     }
 
     .frameForContent {
         width: 50rem;
-        height: 30rem;
+        height: 25rem;
+        margin: 4rem 0 0 0;
         transition: width 1s ease-in, height 1s ease-in;
     }
 
     .playerIcon {
-        inset: 4% 0 0 88%;
-    }
-
-    .playerIcon {
-        inset: 9% 0 0 77%;
+        inset: 3% 0 0 93%;
     }
 
     .notificationAudioText {
-        inset: 6.5% 0 0 82%;
+        inset: -2.5% 0 0 105%;
         font-size: 0.8rem;
         width: 12rem;
     }
 
     .notificationAudio {
-        inset: 8% 0 0 82%;
+        inset: 0% 0 0 105%;
         width: 13rem;
         height: 4rem;
     }
+
+    .mainContentContainer {
+        margin: 2rem 0 0 0;
+    }
+
+    .visibleElement {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    
+    .visibleElementNotification {
+        opacity: 0.5;
+        transform: translateY(0px);
+    }
+
+
+
+
 }
+
+@media screen and (max-width: 800px) {
+    body {
+
+        
+        background-size: 150%;
+        transition: background-size 1s ease-in;
+    }
+    
+    .headerText {
+        font-size: 6rem;
+        margin: 5rem 0 0 0;
+    }
+
+    .bigText {
+        font-size: 5rem;
+        margin: 0rem 0 2rem 0;
+    }
+
+    .frameForContent {
+        width: 50rem;
+        height: 25rem;
+        margin: 4rem 0 0 0;
+        transition: width 1s ease-in, height 1s ease-in;
+    }
+
+    .playerIcon {
+        inset: 3% 0 0 93%;
+    }
+
+    .notificationAudioText {
+        inset: -2.5% 0 0 105%;
+        font-size: 0.8rem;
+        width: 12rem;
+    }
+
+    .notificationAudio {
+        inset: 0% 0 0 105%;
+        width: 13rem;
+        height: 4rem;
+    }
+
+    .mainContentContainer {
+        margin: 2rem 0 0 0;
+    }
+
+    .visibleElement {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    
+    .visibleElementNotification {
+        opacity: 0.5;
+        transform: translateY(0px);
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 672px) {
+    body {
+
+        
+        background-size: 220%;
+        transition: background-size 1s ease-in;
+    }
+    
+    .headerText {
+        font-size: 5rem;
+        margin: 5rem 0 0 0;
+    }
+
+    .bigText {
+        font-size: 4rem;
+        margin: 2rem 0 2rem 0;
+    }
+
+    .frameForContent {
+        width: 40rem;
+        height: 25rem;
+        margin: 4rem 0 0 0;
+        transition: width 1s ease-in, height 1s ease-in;
+    }
+
+    .playerIcon {
+        inset: 3% 0 0 93%;
+    }
+
+    .notificationAudioText {
+        inset: -2.5% 0 0 105%;
+        font-size: 0.8rem;
+        width: 12rem;
+    }
+
+    .notificationAudio {
+        inset: 0% 0 0 105%;
+        width: 13rem;
+        height: 4rem;
+    }
+
+    .mainContentContainer {
+        margin: 2rem 0 0 0;
+    }
+
+    .visibleElement {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    
+    .visibleElementNotification {
+        opacity: 0.5;
+        transform: translateY(0px);
+    }
+
+    .countdownContainer {
+        gap: 5rem;
+    }
+
+
+
+}
+
+
 
 
 @media screen and (max-width: 600px) {
@@ -612,6 +739,122 @@ body {
     }
 }
 
+@media screen and (min-width: 1226px) {
+    body {
+
+        
+        background-size: 160%;
+        transition: background-size 1s ease-in;
+    }
+
+    .headerText {
+        font-size: 6rem;
+        margin: 8rem 0 2rem 0;
+    }
+
+    .bigText {
+        font-size: 5rem;
+        margin: 1rem 0 2rem 0;
+    }
+
+    .frameForContent {
+        width: 50rem;
+        height: 30rem;
+        transition: width 1s ease-in, height 1s ease-in;
+    }
+
+    .playerIcon {
+        inset: 4% 0 0 88%;
+    }
+
+    .playerIcon {
+        inset: 9% 0 0 77%;
+    }
+
+    .notificationAudioText {
+        inset: 6.5% 0 0 82%;
+        font-size: 0.8rem;
+        width: 12rem;
+    }
+
+    .notificationAudio {
+        inset: 8% 0 0 82%;
+        width: 13rem;
+        height: 4rem;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    body {
+
+        
+        background-size: 150%;
+        transition: background-size 1s ease-in;
+    }
+    
+    .headerText {
+        font-size: 6rem;
+        margin: 5rem 0 3rem 0;
+    }
+
+    .bigText {
+        font-size: 5rem;
+        margin: 0rem 0 2rem 0;
+    }
+
+    .frameForContent {
+        width: 50rem;
+        height: 30rem;
+        margin: 9rem 0 0 0;
+        transition: width 1s ease-in, height 1s ease-in;
+    }
+
+    .playerIcon {
+        inset: 8% 0 0 75%;
+    }
+
+    .notificationAudioText {
+        inset: 6% 0 0 80%;
+        font-size: 0.8rem;
+        width: 12rem;
+    }
+
+    .notificationAudio {
+        inset: 7% 0 0 80%;
+        width: 13rem;
+        height: 4rem;
+    }
+
+    .mainContentContainer {
+        margin: 8rem 0 0 0;
+    }
+
+    .visibleElement {
+        transform: translateY(63px);
+        opacity: 1;
+    }
+    
+    .visibleElementNotification {
+        opacity: 0.5;
+        transform: translateY(63px);
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .playerIcon {
+        inset: 7% 0 0 76%;
+    }
+
+    .notificationAudioText {
+        inset: 5% 0 0 78%;
+
+    }
+
+    .notificationAudio {
+        inset: 5% 0 0 78%;
+    }
+}
+
 
 
 @media screen and (min-width: 2560px) {
@@ -693,3 +936,5 @@ body {
         font-size: 2.5rem;
     }
 }
+
+
