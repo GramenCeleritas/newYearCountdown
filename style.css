@@ -344,12 +344,12 @@ body {
     }
 
     .playerIcon {
-        inset: 5rem 0 0 55rem;
+        inset: 4% 0 0 88%;
     }
 }
 
 
-@media screen and (max-width: 900px) {
+@media screen and (min-width: 900px) {
     body {
 
         
@@ -374,16 +374,19 @@ body {
     }
 
     .playerIcon {
-        inset: 4% 0 0 88%;
+        inset: 19% 0 0 88%;
     }
 
     .notificationAudioText {
-        inset: 3% 0 0 93%;
-
+        inset: 14% 0 0 99%;
+        font-size: 0.8rem;
+        width: 12rem;
     }
 
     .notificationAudio {
-        inset: 3% 0 0 93%;
+        inset: 16.5% 0 0 99%;
+        width: 13rem;
+        height: 4rem;
     }
 }
 
