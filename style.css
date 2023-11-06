@@ -150,7 +150,7 @@ body {
     z-index: 2;
     margin: 1.2rem 0 0 0;
     color: #000000;
-    position: fixed;
+    position: absolute;
     transform: translateY(-200px);
     transition: transform 1s ease-in, opacity 1s ease-in;
 }
