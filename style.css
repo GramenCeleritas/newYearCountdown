@@ -628,11 +628,11 @@ body {
     }
 
     .visibleElement {
-        transform: translateY(10px);
+        transform: translateY(35px);
     }
 
     .visibleElementNotification {
-        transform: translateY(10px);
+        transform: translateY(35px);
     }
 
 
