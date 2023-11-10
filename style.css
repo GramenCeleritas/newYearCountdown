@@ -212,7 +212,7 @@ body {
     position: absolute;
     opacity: 0;
     z-index: 3;
-    transition: inset 1s ease-in, inset 1s ease-in, opacity 1s ease-in;
+    transition: inset 1s ease-in, inset 1s ease-in, opacity 1s e;
     inset: 10% 0 0 82%;
     cursor: pointer;
 }
@@ -615,16 +615,16 @@ body {
         align-items: center;
     }
     .playerIcon {
-        inset: 90% auto auto auto;
+        inset: 85% auto auto auto;
     }
 
     .notificationAudioText {
-        inset: 79% auto auto auto;    
+        inset: 74.5% auto auto auto;    
     }
 
     .notificationAudio {
     
-        inset: 80% auto auto auto; 
+        inset: 76% auto auto auto; 
     }
 
     .visibleElement {
