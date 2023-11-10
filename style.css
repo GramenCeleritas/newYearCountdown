@@ -234,7 +234,7 @@ body {
     background: #ffffff;
     width: 16rem;
     height: 6rem;
-    position: fixed;
+    position: absolute;
     border-radius: 15px;
     z-index: 1;
     opacity: 0;
@@ -253,7 +253,7 @@ body {
     width: 15rem;
     margin: 1.5rem 0 0 0.5rem;
     color: #000000;
-    position: fixed;
+    position: absolute;
     inset: 5% 0 0 82%;
     transform: translateX(80px);
     transition: transform 1s ease-in, opacity 1s ease-in;
@@ -604,18 +604,15 @@ body {
         align-items: center;
     }
     .playerIcon {
-        position: fixed;
         inset: 90% auto auto auto;
     }
 
     .notificationAudioText {
-        position: fixed;
         inset: 79% auto auto auto;    
     }
 
     .notificationAudio {
     
-        position: fixed;
         inset: 80% auto auto auto; 
     }
 
@@ -666,18 +663,16 @@ body {
         align-items: center;
     }
     .playerIcon {
-        position: fixed;
+
         inset: 88% auto auto auto;
     }
 
     .notificationAudioText {
-        position: fixed;
         inset: 73.5% auto auto auto;    
     }
 
     .notificationAudio {
     
-        position: fixed;
         inset: 75% auto auto auto; 
     }
 
@@ -829,13 +824,13 @@ body {
     }
 
     .visibleElement {
-        transform: translateY(63px);
+        transform: translateY(80px);
         opacity: 1;
     }
     
     .visibleElementNotification {
         opacity: 0.5;
-        transform: translateY(63px);
+        transform: translateY(80px);
     }
 }
 
@@ -845,12 +840,12 @@ body {
     }
 
     .notificationAudioText {
-        inset: 5% 0 0 78%;
+        inset: 5% 0 0 62%;
 
     }
 
     .notificationAudio {
-        inset: 6% 0 0 78%;
+        inset: 6% 0 0 62%;
     }
 }
 
@@ -866,12 +861,12 @@ body {
     }
     
     .notificationAudioText {
-        inset: 3.7% 0 0 83.5%;
+        inset: 3.7% 0 0 73%;
 
     }
 
     .notificationAudio {
-        inset: 4.5% 0 0 83.5%;
+        inset: 4.5% 0 0 73%;
     }
 
     .headerText {
@@ -906,12 +901,12 @@ body {
     }
     
     .notificationAudioText {
-        inset: 2% 0 0 72.5%;
+        inset: 2% 0 0 65%;
 
     }
 
     .notificationAudio {
-        inset: 2.5% 0 0 72.5%;
+        inset: 2.5% 0 0 65%;
     }
 
     .headerText {
