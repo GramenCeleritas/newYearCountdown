@@ -51,13 +51,21 @@ window.onload = function() {
     } else {
       audio.setAttribute('controls','')
     }
+
+    setTimeout(() => {
+      playerIcon.classList.add('fadePlayerIcon')
+    }, 1500)
+
+    if(playerIcon.classList.contains('fadePlayerIcon')) {
+      playerIcon.classList.remove('fadePlayerIcon')
+    }
   })
 
 
 
   playerIcon.addEventListener('mouseover', () => {
     playerIcon.classList.add('playerIconAnim')
-    
+    playerIcon.classList.remove('fadePlayerIcon')
     if (!notificationAudio.classList.contains('shoved')) {
       notificationAudio.classList.add('notificationAudioAppear')
       notificationAudioText.classList.add('notificationAudioTextAppear')
@@ -77,7 +85,15 @@ window.onload = function() {
     playerIcon.classList.add('playerIconAnimDown');
     setTimeout(()=> {
       playerIcon.classList.remove('playerIconAnimDown');
+      
     },500);
+
+    setTimeout(() => {
+      playerIcon.classList.add('fadePlayerIcon')
+    }, 1000)
+
+    
+
 
     
   })
@@ -108,6 +124,9 @@ window.onload = function() {
     
     if (!audio.paused) {
       playerIcon.classList.add('appearPlayerIcon')
+      setTimeout(() => {
+        playerIcon.classList.add('fadePlayerIcon')
+      }, 3500)
       console.log('audio is playing now')
     }
 
