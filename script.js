@@ -54,7 +54,7 @@ window.onload = function() {
 
     setTimeout(() => {
       playerIcon.classList.add('fadePlayerIcon')
-    }, 1500)
+    }, 2500)
 
     if(playerIcon.classList.contains('fadePlayerIcon')) {
       playerIcon.classList.remove('fadePlayerIcon')
@@ -90,7 +90,7 @@ window.onload = function() {
 
     setTimeout(() => {
       playerIcon.classList.add('fadePlayerIcon')
-    }, 1000)
+    }, 2500)
 
     
 
