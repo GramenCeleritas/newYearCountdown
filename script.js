@@ -67,7 +67,7 @@ window.onload = function() {
     setTimeout(()=> {
       notificationAudio.classList.remove('notificationAudioAppear')
       notificationAudioText.classList.remove('notificationAudioTextAppear')
-    }, 5500)
+    }, 100000)
 
   })
 
