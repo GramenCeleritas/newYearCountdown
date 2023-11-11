@@ -546,6 +546,69 @@ body {
 
 }
 
+@media screen and (min-width: 672px) and (max-height: 1000px) {
+    body {
+
+        
+        background-size: 220%;
+        transition: background-size 1s ease-in;
+    }
+    
+    .headerText {
+        font-size: 5rem;
+        margin: 8rem 0 0 0;
+    }
+
+    .bigText {
+        font-size: 4rem;
+        margin: 2rem 0 2rem 0;
+    }
+
+    .frameForContent {
+        width: 40rem;
+        height: 25rem;
+        margin: 7rem 0 0 0;
+        transition: width 1s ease-in, height 1s ease-in;
+    }
+
+    .playerIcon {
+        inset: 5% auto auto 88%;
+    }
+
+    .notificationAudioText {
+        inset: 3.1% auto auto 59%;
+        font-size: 0.8rem;
+        width: 12rem;
+    }
+
+    .notificationAudio {
+        inset: 4% auto auto 60%;
+        width: 12rem;
+        height: 4rem;
+    }
+
+    .mainContentContainer {
+        margin: 2rem 0 0 0;
+    }
+
+    .visibleElement {
+        transform: translateY(20px);
+        opacity: 1;
+    }
+    
+    .visibleElementNotification {
+        opacity: 0.5;
+        transform: translateY(20px);
+    }
+
+    .countdownContainer {
+        gap: 5rem;
+    }
+
+
+
+}
+
 
 
 
